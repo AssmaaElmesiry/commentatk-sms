@@ -1,0 +1,166 @@
+/* ------------------------------------------ */
+
+
+/*         General & Basic Styles
+/* ------------------------------------------ */
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    font-family: "Alegreya-Regular";
+    font-family: "Lato-Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0
+}
+
+a {
+    text-decoration: none!important;
+    outline: none
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: 0;
+}
+
+.center-block {
+    float: none
+}
+
+.background-cover {
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover!important;
+    background-size: cover!important;
+}
+
+input,
+textarea,
+button,
+select {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.Owl {
+    direction: ltr;
+}
+
+
+/**************************************************
+     ******************* CustomHeader **********************
+     ***************************************************/
+
+.CustomHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 55px;
+    height: 80px;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+
+.DownHeader {
+    position: absolute;
+    z-index: 3;
+    top: 35px;
+}
+
+.DownHeader img {
+    width: 100%;
+}
+
+.CustomHeader .logo h1 {
+    font-size: 40px;
+    color: #973E12;
+}
+
+.CustomHeader .nav {
+    display: flex;
+    flex: 0 0 30%;
+}
+
+.CustomHeader .nav ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.CustomHeader .nav ul li a {
+    font-size: 12px;
+    font-family: "Lato-Bold";
+    color: #AC6A4E;
+}
+
+.CustomHeader .store {
+    flex: 0 0 17%;
+}
+
+.CustomHeader .store ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.CustomHeader .store ul li {
+    color: #973E12;
+    font-family: "Lato-Bold";
+    font-size: 12px;
+}
+
+
+/**************************************************
+     *******************backgroundSlider**********************
+     ***************************************************/
+
+.Slider {
+    position: relative;
+    z-index: 1;
+}
+
+.Slider .bgSlider .item .imgBg {
+    min-height: 100%;
+    width: 100%;
+    max-width: none;
+    margin-top: -40px;
+}

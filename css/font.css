@@ -1,0 +1,25 @@
+/*
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =  
+=     00   00 00 00   00 00 00   00 00 00   00 00 00   00 00    =
+=     00   00    00        00    00    00   00    00   00       =
+=     00   00    00      00      00    00   00    00   00       =
+=     00   00    00    00        00    00   00    00   00       =
+=  00 00   00 00 00   00 00 00   00 00 00   00 00 00   00       =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+*/
+
+@font-face {
+    font-family: "NotoKufiArabic-Bold";
+    src: url('../fonts/NotoKufiArabic-Bold.eot');
+    src: url('../fonts/NotoKufiArabic-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoKufiArabic-Bold.svg#DroidKufi Regular') format('svg'), url('../fonts/NotoKufiArabic-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoKufiArabic-Regular";
+    src: url('../fonts/NotoKufiArabic-Regular.eot');
+    src: url('../fonts/NotoKufiArabic-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/NotoKufiArabic-Regular.svg#DroidKufi Regular') format('svg'), url('../fonts/NotoKufiArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

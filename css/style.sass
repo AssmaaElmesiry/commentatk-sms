@@ -1,0 +1,669 @@
+
+$first-color: #FF9F00
+$second-color: #737373
+
+
+/* ------------------------------------------
+
+/*         General & Basic Styles
+ * ------------------------------------------
+
+body, html
+    height: 100%
+
+body
+    font-family: "NotoKufiArabic-Bold"
+    font-family: "notokufiarabic-regular"
+body
+
+h1, h2, h3, h4, h5, h6
+    margin-top: 0
+    margin-bottom: 0
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+li
+    padding: 0
+    margin: 0
+
+p
+    margin-bottom: 0
+.col-md-2
+    margin: 0!important
+    padding: 0!important
+    width: 19.900%
+a
+    text-decoration: none !important
+    outline: none
+    &:hover, &:active, &:focus
+        outline: 0
+.container-fluid
+    margin-top: 10px
+    margin-left: 7px
+.center-block
+    float: none
+
+.background-cover
+    -webkit-background-size: cover !important
+    -moz-background-size: cover !important
+    -o-background-size: cover !important
+    background-size: cover !important
+
+input, textarea, button, select
+    outline: none
+
+input[type="number"]
+    -moz-appearance: textfield
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
+
+.Owl
+    direction: rtl
+
+
+
+/**************************************************
+ *******************  MenuMobile  **********************
+  ***************************************************/
+.menuMobile
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 99999
+    left: 0
+    top: 0
+    display: none
+    .headMenu
+        padding: 20px 0
+        padding-left: 55px
+    .customer
+        width: 135px
+        height: 45px
+        line-height: 45px
+        background-color: $second-color
+        color: #fff
+        font-size: 16px
+        font-family: "NotoKufiArabic-Bold"
+        display: block
+        text-align: center
+        border-radius: 10px
+        margin-top: 40px
+        margin-right: 80px
+    .BgClose
+        background-color: rgba(0, 0, 0, 0.4)
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: 99
+        cursor: pointer
+    .menuContent
+        width: 320px
+        max-width: 100%
+        // background-color: $first-color
+        position: absolute
+        top: 0
+        height: 100%
+        overflow: auto
+        z-index: 100
+        right: -320px
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            background-color: $first-color
+            opacity: 0.75
+            width: 100%
+            height: 100%
+            z-index: -1
+
+        &.active
+            right: 0
+        .closeX
+            position: absolute
+            top: 15px
+            left: 15px
+            font-size: 30px
+            color: #FFF
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            text-align: center
+            line-height: 25px
+            padding: 0
+            opacity: 1
+            cursor: pointer
+            text-transform: uppercase
+            font-style: normal
+            &:hover
+                opacity: 1
+            i
+                font-size: 20px
+                float: left
+            .logoMenu
+                display: block
+                margin: 15px auto 20px
+                width: 180px
+                img 
+                    max-width: 100%
+        .menuRes
+            li
+                display: flex
+                border-bottom: 1px solid #FFF
+                padding-right: 50px
+                a
+                    color: #FFF
+                    height: 65px
+                    display: block
+                    position: relative
+                    font-size: 15px
+                    font-family: "NotoKufiArabic-Bold"
+                    line-height: 60px
+                    cursor: pointer
+                    width: 100%
+                    padding-right: 20px
+                i
+                    align-self: center
+                    font-size: 20px
+                    color: #FFF
+        .login
+            display: flex
+            width: 100%
+            line-height: 52px
+            text-align: center
+            justify-content: center
+            margin-top: 50px
+            a
+                color: #FF9F00;
+                font-size: 20px
+                font-family: "NotoKufiArabic-Regular"
+                width: 155px
+                height: 60px
+                border: 1px solid #FF9F00
+                border-radius: 50px
+                background-color: #fff
+                line-height: 52px
+                text-align: center
+
+
+
+/**************************************************
+ *   ******************* Header **********************
+ *   **************************************************/
+
+.bg
+    margin-top: -34vw
+    z-index: -1
+    background-color: $first-color
+    border-bottom-left-radius: 100px
+    border-bottom-right-radius: 100px
+    height: auto
+    width: 100%
+    img
+        width: 100%
+        max-height: 100%
+        height: 100%
+        border-bottom-left-radius: 100px
+        border-bottom-right-radius: 100px
+.header
+    display: flex
+    justify-content: center
+    text-align: center
+    width: 100%
+    align-items: center
+    position: absolute
+    top: 0
+    z-index: 9
+    height: 130px
+    padding-top: 20px
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        .top
+            display: flex
+            flex-direction: column
+    .openMenu
+        display: none
+    .nav
+        display: inline-block
+        padding-left: 30px
+        background-color: $first-color
+        border-radius: 50px
+        width: 430px
+        height: 95px
+        padding-top: 16px
+        padding-right: 30px
+        li
+            padding-left: 45px
+            display: flex
+            flex-direction: column
+            i
+                font-size: 25px
+                color: #fff
+                padding-bottom: 10px
+            a
+                color: #fff
+                font-size: 20px
+                font-family: "NotoKufiArabic-Regular"
+
+        ul
+            display: flex
+    .login
+        display: inline-block
+        border: 5px solid $first-color
+        border-radius: 50px
+        background-color: #fff
+        width: 155px
+        height: 60px
+        line-height: 52px
+        text-align: center
+        margin-right: 30px
+        a
+            color: $first-color
+            font-size: 20px
+            font-family: "NotoKufiArabic-Regular"
+.logo
+    width: 28vw
+    margin: 170px auto 0px
+    z-index: 1
+    position: relative
+    img
+        width: 100%
+    
+
+
+/**************************************************
+ *   ******************* info **********************
+ *   **************************************************/
+.title
+    font-size: 40px
+    font-family: "NotoKufiArabic-Bold"
+    color: $first-color
+    text-align: center
+.info
+    padding-top: 50px
+    .container
+        margin-top: 120px
+    .section1
+        display: flex
+        // flex-wrap: wrap
+        margin-top: 60px
+        padding-bottom: 145px
+        .details
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+        p
+            font-family: "NotoKufiArabic-Regular"
+            font-size: 20px
+            line-height: 2.5
+            color: $second-color
+        .try
+            width: 155px
+            height: 60px
+            background-color: $first-color
+            color: #fff
+            font-size: 20px
+            display: block
+            line-height: 60px
+            border-radius: 50px
+            text-align: center
+            margin-top: 80px
+        img
+            width: 953px
+            height: 385px
+            padding-top: 55px
+
+/**************************************************
+ *   ******************* features **********************
+ *   **************************************************/
+.features
+    margin: 0 145px
+    p
+        padding-top: 30px
+        font-family: "NotoKufiArabic-Regular"
+        font-size: 20px
+        text-align: center
+        color: $second-color
+        margin-bottom: 85px
+    .item
+        display: flex
+    .mask
+        display: flex
+        flex-direction: column
+        width: 382px
+        height: auto
+        >img
+            width: 100%
+            height: 100%
+            max-height: 520px
+            max-width: 540px
+    
+        .details
+            text-align: right
+            span
+                font-size: 20px
+                font-family: "NotoKufiArabic-Bold"
+                color: $second-color
+            h2
+                font-size: 20px
+                font-family: "NotoKufiArabic-Bold"
+                color: $first-color
+                text-align: center
+                padding-top: 20px
+            p
+                font-size: 15px
+                font-family: "NotoKufiArabic-Regular"
+                color: $second-color
+                text-align: right
+                line-height: 2.5
+        .first
+            position: relative
+            .img1
+                position: absolute
+                top: 29px
+                right: -174px
+                img
+                    height: 430px
+        .second
+            position: relative
+            .img2
+                position: absolute
+                top: 10px
+                left: -190px
+        .third
+            position: relative
+            .img3
+                position: absolute
+                top: -128%
+                right: -47%
+
+    .left
+        justify-content: left
+        // margin-top: -257px
+    .down
+        
+        margin-top: -137px
+    .right
+        justify-content: right
+        margin-top: -257px
+
+/**************************************************
+ *   ******************* Price **********************
+ *   **************************************************/
+.Price
+    margin-bottom: 175px
+    .top-section
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        margin-bottom: 140px
+        span
+            padding-top: 40px
+            padding-bottom: 30px
+            font-size: 20px
+            color: $second-color
+            font-family: "NotoKufiArabic-Regular"
+        p
+            font-size: 20px
+            color: $second-color
+            font-family: "NotoKufiArabic-Regular"
+    .section
+        display: flex
+        justify-content: space-between
+        margin-bottom: 62px
+        flex-wrap: wrap 
+        .item
+            .mask
+                background-color: #EEF2F8
+                width: 352px
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                border-radius: 50px 50px 25px 25px
+                margin-top: 20px
+                margin-bottom: 20px
+                .Title
+                    font-size: 40px
+                    font-family: "NotoKufiArabic-Bold"
+                    border: 1px solid transparent
+                    width: 315px
+                    height: 70px
+                    margin-top: 10px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: #E6EBF4
+                    border-radius: 50px
+                .Cost
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    border: 1px solid transparent
+                    width: 245px
+                    height: 245px
+                    border-radius: 50%
+                    background-color: #E6EBF4
+                    align-items: center
+                    margin-top: 40px
+
+                    > span
+                        align-self: center
+                        font-size: 80px
+                        font-family: "NotoKufiArabic-Bold"
+                    p
+                        font-size: 30px
+                        font-family: "NotoKufiArabic-Bold"
+                        span
+                            display: block
+                            text-align: center
+                            font-size: 15px
+                ul
+                    margin-top: 40px
+                    width: 100%
+                    padding-right: 15px
+                    li
+                        display: flex
+                        border: 1px solid transparent
+                        background-color: #E6EBF4
+                        border-radius: 50px
+                        width: 315px
+                        height: 35px
+                        align-self: center
+                        align-items: center
+                        padding: 0 15px
+                        margin-bottom: 15px
+                        .desc
+                            display: flex
+                            justify-content: space-between
+                            width: 100%
+                            p
+                                padding-right: 30px
+                                font-size: 15px
+                                font-family: "NotoKufiArabic-Regular"
+                                color: #000
+                            span
+                                font-size: 15px
+                                font-family: "NotoKufiArabic-Bold"
+                                color: #000
+                .join
+                    margin-top: 50px
+                    margin-bottom: 30px
+
+                    a
+                        width: 215px
+                        height: 80px
+                        border-radius: 20px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border: 4px solid $first-color
+                        font-size: 20px
+                        font-family: "NotoKufiArabic-Bold"
+                        color: $first-color
+        .center
+            .mask
+                margin-top: 0
+                width: 352px
+                box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.16)
+
+
+                .Title ,.Cost
+                    background-color: $first-color
+                .join
+                    a
+                        background-color: $first-color
+                        color: #fff
+    .down-section
+        p
+            font-size: 20px
+            font-family: "NotoKufiArabic-Regular"
+            color: $second-color
+            text-align: center
+/**************************************************
+ *   ******************* Clients **********************
+ *   **************************************************/
+.Clients
+    margin-bottom: 200px
+    .Slider
+        margin-top: 50px
+/**************************************************
+ *   ******************* Call-Us **********************
+ *   **************************************************/
+.Call-Us
+    margin-bottom: 155px
+    .row
+        margin-top: 80px
+    form
+        input
+            width: 100%
+            max-width: 320px
+            height: 50px
+            border: none
+            border: 1px solid $first-color
+            border-radius: 50px
+            margin-bottom: 40px
+            padding-right: 10px
+            color: $first-color
+            font-family: "NotoKufiArabic-Bold"
+        .form-control
+            display: block
+            width: 100%
+            max-width: 320px
+            height: 215px
+            padding: 17px 20px
+            font-size: 14px
+            color: $first-color !important
+            background-color: #FFF
+            border: 1px solid $first-color
+            border-radius: 20px
+            font-family: "NotoKufiArabic-Bold"
+            resize: inherit
+            position: relative !important
+        .textarea-div
+            position: relative
+            max-width: 320px
+            .send
+                position: absolute
+                left: 10px
+                bottom: 10px
+                a
+                    width: 95px
+                    height: 40px
+                    background-color: $first-color
+                    display: block
+                    color: #fff
+                    text-align: center
+                    line-height: 40px
+                    font-size: 14px
+                    font-family: "NotoKufiArabic-Bold"
+                    border-radius: 20px
+    .connectUs
+            display: flex
+            flex-direction: column
+            div
+                display: flex
+                color: $first-color
+                padding-bottom: 40px
+                font-size: 14px
+                font-family: "NotoKufiArabic-Bold"
+                i
+                    padding-left: 10px
+                    font-size: 25px
+                a
+                    color: $second-color
+
+                    
+            .map
+                align-items: center
+                width: 345px
+                p
+                    span
+                        color: $second-color
+                        display: block 
+            img
+                width: 100%
+                height: 100%
+
+::placeholder
+    color: $first-color
+    opacity: 1
+    :-ms-input-placeholder
+        color: $first-color
+    ::-ms-input-placeholder
+        color: $first-color
+
+textarea#exampleFormControlTextarea1
+    resize: none !important
+textarea#exampleFormControlTextarea1::-webkit-input-placeholder
+    color: $first-color !important
+textarea#exampleFormControlTextarea1:-moz-placeholder
+    color: $first-color !important
+textarea#exampleFormControlTextarea1::-moz-placeholder
+    color: $first-color !important
+textarea#exampleFormControlTextarea1:-ms-input-placeholder
+    color: $first-color !important
+textarea#exampleFormControlTextarea1::placeholder
+    color: $first-color !important
+textarea::placeholder
+    color: $first-color !important
+/**************************************************
+ *   *******************footer **********************
+ *   **************************************************/
+.footer
+    display: flex
+    flex-wrap: wrap
+    background-color: $first-color
+    width: 100%
+    height: 135px
+    justify-content: space-around
+    align-items: center
+    p
+        font-size: 20px
+        font-family: "NotoKufiArabic-Bold"
+        color: $second-color
+    ul
+        display: flex
+        li
+            padding-left: 20px
+            i
+                font-size: 25px
+                color: $second-color
